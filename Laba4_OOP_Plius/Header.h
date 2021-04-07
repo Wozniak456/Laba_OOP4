@@ -9,7 +9,7 @@ public:
 	Kvadrat();
 	Kvadrat(double x1, double y1, double x2, double y2, double x3, double y3, double x4, double y4);
 	Kvadrat(const Kvadrat& obj);
-	friend Kvadrat operator +(Kvadrat K1, int number);
-	friend Kvadrat operator /(Kvadrat K1, Kvadrat K2);
+	Kvadrat operator +(int number);
+	Kvadrat operator /(const Kvadrat& K2);
 	void SquareData();
 };
